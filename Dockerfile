@@ -9,6 +9,7 @@ RUN git clone https://github.com/bryanpkc/corkscrew.git \
 
 
 # example usage of including corkscrow in a docker image
+# you can also use mcr.microsoft.com/devcontainers/base:bullseye
 FROM public.ecr.aws/debian/debian:bullseye
 COPY --from=Corkscrew /usr/local/bin/corkscrew /usr/local/bin/corkscrew
 
